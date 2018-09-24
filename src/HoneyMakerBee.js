@@ -11,7 +11,6 @@ class HoneyMakerBee extends Bee {
 
   makeHoney () {
     this.honeyPot++;
-    return this.honeyPot;
   }
 
   giveHoney () {
