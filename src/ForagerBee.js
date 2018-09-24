@@ -1,19 +1,15 @@
 class ForagerBee extends Bee {
-  constructor(age, job, color, canFly, treasureChest) {
-    super(food);
+  constructor() {
+    super();
     this.age = 10;
-    this.job = 'pollen'
-    this.color = yellow;
+    this.job = 'find pollen';
     this.canFly = true;
     this.treasureChest = [];
   }
 
-  eat() {
-    return "I want to eat my food";
-  }
-
-  forageMethod () {
+  forage(treasure) {
     // allows the bee to add a treasure to the treasureChest;
+    this.treasureChest.push(treasure);
   }
 };
 

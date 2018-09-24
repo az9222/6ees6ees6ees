@@ -1,23 +1,18 @@
-class RetiredForagerBee extends ForageerBee {
-  constructor(age, job, canFly, color, food, treasureChest) {
-    super(age, job, color, canFly, treasureChest);
+class RetiredForagerBee extends ForagerBee {
+  constructor() {
+    super();
     this.age = 40;
-    this.job = //set to gamble
-    this.food = food;
+    this.job = "gamble";
     this.canFly = false;
     this.color = "grey";
   }
 
   forage() {
-    return "I am too old, let me play cards instead"
+    return "I am too old, let me play cards instead";
   }
 
-  eat() {
-    return "I want to eat food";
-  }
-
-  gamble () {
-    // allows the bee to add a treasure to the treasureChest
+  gamble (treasure) {
+    this.treasureChest.push(treasure)
   }
 };
 // call the ForagerBee superclass

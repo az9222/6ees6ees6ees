@@ -1,22 +1,21 @@
 class HoneyMakerBee extends Bee {
-  constructor(age, color, food, job, honeyPot) {
-    super(age, color, food, job);
+  constructor() {
+    super();
     this.age = 10;
-    this.job = //set to make honey
+    this.job = "make honey";
     this.honeyPot = 0;
-    this.color = yellow;
+    //no need to say this.color="yellow" because Bee already has it
   }
-  
-  eat() {
 
-  }
+  //no need for eat method because it's in Grub
 
   makeHoney () {
-    return this.honeyPot++;
+    this.honeyPot++;
+    return this.honeyPot;
   }
 
   giveHoney () {
-    return this.honeyPott--;
+    this.honeyPot--;
   }
 };
 

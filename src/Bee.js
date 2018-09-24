@@ -1,14 +1,13 @@
 class Bee extends Grub {
-    constructor(age, color, food, job) {
-      super(age, color, food);
+    constructor() {
+      super(); //we are overriding the properties from Grub that have been inherited by Bee 
       this.age = 5;
-      this.color = yellow;
-      this.job = //a job property that is set to keep on growing;
+      this.color = 'yellow';
+      this.job = "Keep on growing";
+      //note that theres no food property bc it will be passed down from the parent class
     }
 
-    eat() {
-      return "I have eaten my food."
-    }
+    //no need for eat method bc its in grub
 };
 
 // call the Grub superclass
