@@ -1,6 +1,6 @@
 class HoneyMakerBee extends Bee {
   constructor() {
-    super();
+    super(); //used to access and call functions on an object's parent.
     this.age = 10;
     this.job = "make honey";
     this.honeyPot = 0;

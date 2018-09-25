@@ -15,6 +15,7 @@ class RetiredForagerBee extends ForagerBee {
     this.treasureChest.push(treasure)
   }
 };
+
 // call the ForagerBee superclass
 // set the prototype
 // set the constructor
